@@ -34,7 +34,7 @@ def main():
     totan = weekn + wkndn
     park = (lambda x:1 if x == 'Online'else 0 )(st.selectbox('Does customer need parking ',['yes','no']))
     spcl = st.selectbox('How many special requests have been made',[0,1,2,3,4,5])
-    lt_t,price_t transformer.transform([[lt,price]])[0]
+    lt_t,price_t = transformer.transform([[lt,price]])[0]
     inp_list = [lt_t,spcl,price_t,adult,wkndn,park,weekn,mkt,arr_m,arr_w,totan,dep_w]
     if st.button('predict'):
         response = prediction(inp_list)
