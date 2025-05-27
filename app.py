@@ -20,13 +20,13 @@ def main():
     price = st.text_input('Enter the price of the room')
     adult = st.selectbox('How many adults',[1,2,3,4])
     arr_m = st.slider('What is the month of arrival?',min_val = 1,max_vale = 12,step = 1)
-    weekd_lamba = (lambda x: 0 if x =='Mon',else
+    weekd_lamba = (lambda x: 0 if x =='Mon' else
                              1 if x == 'Tue'else
                              2 if x == 'Wed'else
                              3 if x == 'Thus'else
                              4 if x == 'Fri'else
                              5 if x == 'Sat'else
-                             6 if x == 'Sun'
+                             6 if x == 'Sun' else 6
     arr_w = st.selectbox('What is the weekday of arrival',['Mon','Tue','Wed','Thus','Fri','Sat','Sun'])
     dep_w = st.selectbox('What is the weekday of departure',['Mon','Tue','Wed','Thus','Fri','Sat','Sun'])
     weekn = st.text_input('Enter the no of week nights in stay')
