@@ -26,7 +26,7 @@ def main():
                              3 if x == 'Thus'else
                              4 if x == 'Fri'else
                              5 if x == 'Sat'else
-                             6 if x == 'Sun' else 6
+                             6 if x == 'Sun' else 6)
     arr_w = st.selectbox('What is the weekday of arrival',['Mon','Tue','Wed','Thus','Fri','Sat','Sun'])
     dep_w = st.selectbox('What is the weekday of departure',['Mon','Tue','Wed','Thus','Fri','Sat','Sun'])
     weekn = st.text_input('Enter the no of week nights in stay')
